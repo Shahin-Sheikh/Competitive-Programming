@@ -4,18 +4,18 @@ using namespace std;
  
 int main()
 {
-    int a,b,i=0,res=0,count=0;
+    int a,b,count=0;
     cin>>a>>b;
-    for(i=0;i<b;i++){
-        res = a*i;
-        if(a==1 && b==1){
-            cout<<1<<"\n";
+    if(a>b){
+        count = 0;
+    }
+    else{
+        while(a<=b){
+            a=a*3;
+            b=b*2;
+            count++;
         }
-        else if(res>=b){
-            cout<<count<<"\n";
-            break;
-        }
-        count++;
+        cout<<count<<"\n";
     }
     return 0;
 }
