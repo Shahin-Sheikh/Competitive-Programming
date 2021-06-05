@@ -3,6 +3,12 @@
 using namespace std;
 
 int main(){
-	cout<<"Hello world\n";
-	return 0;
+	char ch;
+	cin>>ch;
+	if (ch == '%' || ch == '/' || ch == '*' || ch == '+' || ch == '-') {
+		cout<<"Given input is operator\n";
+	}
+	else{
+		cout<<"Given input is not operator\n";
+	}
 }
