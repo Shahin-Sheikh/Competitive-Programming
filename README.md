@@ -1,2 +1,2 @@
 # Codeforces
- This is my codeforces problem solutions
+ This is my competitive programming problem solutions
