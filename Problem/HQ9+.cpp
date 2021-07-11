@@ -2,17 +2,15 @@
 using namespace std;
 
 int main(){
-    string str[100];
-    for(int i=0;i<100;i++){
-        cin>>str[i];
-        if(str[i] == "H" || str[i] == "Q" || str[i] == "9"){
+    string str;
+    cin>>str;
+    int flag = 0;
+    for(int i=0;i<str.size();i++){
+        if(str[i] == 'H' || str[i] == 'Q' || str[i] == '9'){
             cout<<"YES\n";
-            break;
-        }
-        else{
-            cout<<"NO\n";
-            break;
+            return 0;
         }
     }
+    cout<<"NO\n";
     return 0;
 }
