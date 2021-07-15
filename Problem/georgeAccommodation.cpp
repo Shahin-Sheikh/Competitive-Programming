@@ -7,7 +7,7 @@ int main(){
     int p,q;
     for(int i=0;i<n;i++){
         cin>>p>>q;
-        if(p != q){
+        if(q-p>=2){
             count++;
         }
     }
