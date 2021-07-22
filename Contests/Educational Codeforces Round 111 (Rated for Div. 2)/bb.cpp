@@ -33,33 +33,47 @@ const   int            md  = 0;
 
 //=========== Run Case ============//
 void tr(){
-     ll a,b,c,d,e,f,tmp,tmp1,sum,sum1,sum2,sum3,res,res1;
+    ll hj,lk,oi,lo,mm,hdjuf;
+    cin>>hj>>lk;
+    ll ara[hj][lk];
+    for(ll i=0;i<hj;i++){
+        for(ll j=0;j<lk;j++)
+            ara[i][j]=0;
+    }
+    ara[0][0]=1;
+    ara[hj-1][0]=1;
+    ara[0][lk-1]=1;
+    ara[hj-1][lk-1]=1;
+    if(hj%2==0){
+        for(int i=3;i<hj;i+=2){
+            ara[i][0]=1;
+            ara[i][lk-1]=1;
+        }
+    }
+    else{
+        for(int i=2;i<hj;i+=2){
+            ara[i][0]=1;
+            ara[i][lk-1]=1;
+        }
+    }
+    if(lk%2==0){
+        for(int i=3;i<lk;i+=2){
+            ara[0][i]=1;
+            ara[hj-1][i]=1;
+        }
+    }
+    else{
+        for(int i=2;i<lk;i+=2){
+            ara[0][i]=1;
+            ara[hj-1][i]=1;
+        }
+    }
+    for(ll i=0;i<hj;i++){
+        for(ll j=0;j<lk;j++)
+            cout<<ara[i][j]<<"\n";
+    }
+    cout<<"\n";
 
-      cin>>a>>b>>c>>d>>e>>f;
-
-      tmp = abs(a-c);
-      tmp1 = abs(b-d);
-
-      res = tmp+tmp1;
-
-      sum = abs(a-e);
-      sum1 = abs(c-e);
-      sum2 = abs(b-f);
-      sum3 = abs(d-f);
-
-      res1 = sum+sum1+sum2+sum3;
-
-      if(a!=c && b!=d){
-        cout<<res<<"\n";
-      }
-
-      else if(res==res1){
-        cout<<res+2<<"\n";
-      }
-
-      else{
-        cout<<res<<"\n";
-      }
 }
 
 //=========== Main Function ==============//

@@ -13,7 +13,7 @@ bool isSquare(int x){
   return y*y==x;
 }
 
-void run_case(){
+void tr(){
   int n;
   cin>>n;
   if (n%2==0 && isSquare(n/2))
@@ -28,5 +28,5 @@ int main(){
   int tests; 
   cin>>tests;
   while (tests--)
-    run_case();
+    tr();
 }

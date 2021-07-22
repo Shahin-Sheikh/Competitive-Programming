@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void run_case(){
+void tr(){
     int n,count1=0;
     cin>>n;
     for(int i=1;i<=n;i++){
@@ -17,6 +17,6 @@ int main()
   int tests; 
   cin>>tests;
   while (tests--)
-    run_case();
+    tr();
   return 0;
 }

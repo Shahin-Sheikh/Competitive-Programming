@@ -33,33 +33,43 @@ const   int            md  = 0;
 
 //=========== Run Case ============//
 void tr(){
-     ll a,b,c,d,e,f,tmp,tmp1,sum,sum1,sum2,sum3,res,res1;
-
-      cin>>a>>b>>c>>d>>e>>f;
-
-      tmp = abs(a-c);
-      tmp1 = abs(b-d);
-
-      res = tmp+tmp1;
-
-      sum = abs(a-e);
-      sum1 = abs(c-e);
-      sum2 = abs(b-f);
-      sum3 = abs(d-f);
-
-      res1 = sum+sum1+sum2+sum3;
-
-      if(a!=c && b!=d){
-        cout<<res<<"\n";
-      }
-
-      else if(res==res1){
-        cout<<res+2<<"\n";
-      }
-
-      else{
-        cout<<res<<"\n";
-      }
+    ll gg,qwea, shuew, odhei;
+    cin>>gg;
+    vector<ll> er(gg);
+    vector<ll> jk(gg);
+    for(ll i=0;i<gg;i++){
+        cin>>er[i];
+    }
+    for(ll i=0;i<gg;i++){
+        cin>>jk[i];
+    }
+    vector<ll> dj(gg+1);
+    vector<ll> mj(gg+1);
+    sort(er.begin(),er.end(),greater<ll>());
+    sort(jk.begin(),jk.end(),greater<ll>());
+    for(ll i=1;i<=gg;i++){
+        dj[i] = er[i-1];
+        mj[i] = jk[i-1];
+        dj[i] += dj[i-1];
+        mj[i] += mj[i-1];
+    }
+    ll laq=0,haq=1e9;
+    while(laq<haq){
+        ll mud = (laq+haq)>>1;
+        ll dup = (gg+mud) - (gg+mud)/4;
+        ll yes = max(dup-mud,0LL);
+        ll nai = min(dup,gg);
+        ll ay = mud*100;
+        ay += dj[yes];
+        ll na = mj[nai];
+        if(ay<na){
+            laq = mud+1;
+        }
+        else{
+            haq = mud;
+        }
+    }
+    cout<<laq<<"\n";
 }
 
 //=========== Main Function ==============//

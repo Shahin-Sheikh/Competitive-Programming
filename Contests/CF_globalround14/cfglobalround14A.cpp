@@ -8,7 +8,7 @@ Time complexity for each test case: O(n)*/
 #include <bits/stdc++.h>
 using namespace std;
 
-void run_case(){
+void tr(){
   int n,x;
   int w[101];
   cin>>n>>x;
@@ -42,6 +42,6 @@ int main(){
   int tests;
   cin>>tests;
   while (tests--)
-    run_case();
+    tr();
   return 0;
 }

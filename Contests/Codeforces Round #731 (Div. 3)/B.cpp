@@ -32,7 +32,7 @@ const   int            md  = 0;
 //----------------------------------------------------------------------------------//
 
 //=========== Run Case ============//
-void run_case(){
+void tr(){
         string str;
 		cin >> str;
         vector<bool> n(26,0);
@@ -69,7 +69,7 @@ int main() {
     int tests;
     cin>>tests;
     while(tests--){
-        run_case();
+        tr();
     }
 	return 0;
 }

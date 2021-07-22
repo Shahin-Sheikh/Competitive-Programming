@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void run_case(){
+void tr(){
    vector<int> x;
    int a,b,c,d,cal,cal1,sum=0;
    cin>>a>>b>>c>>d;
@@ -46,7 +46,7 @@ int main(){
     int tests;
     cin>>tests;
     while (tests--){
-        run_case();
+        tr();
     }
     return 0;
 }

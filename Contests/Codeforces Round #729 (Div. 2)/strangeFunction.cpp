@@ -14,7 +14,7 @@ int smallestDivisor(int n)
  
     return n;
 }
-void run_case(){
+void tr(){
     int n,sum=0;
     cin>>n;
     for(int i=1;i<=n;i++){
@@ -28,7 +28,7 @@ int main(){
     int tests;
     cin>>tests;
     while (tests--){
-        run_case();
+        tr();
     }
     return 0;
 }

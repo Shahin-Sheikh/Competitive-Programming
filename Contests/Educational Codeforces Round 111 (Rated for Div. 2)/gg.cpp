@@ -33,33 +33,47 @@ const   int            md  = 0;
 
 //=========== Run Case ============//
 void tr(){
-     ll a,b,c,d,e,f,tmp,tmp1,sum,sum1,sum2,sum3,res,res1;
-
-      cin>>a>>b>>c>>d>>e>>f;
-
-      tmp = abs(a-c);
-      tmp1 = abs(b-d);
-
-      res = tmp+tmp1;
-
-      sum = abs(a-e);
-      sum1 = abs(c-e);
-      sum2 = abs(b-f);
-      sum3 = abs(d-f);
-
-      res1 = sum+sum1+sum2+sum3;
-
-      if(a!=c && b!=d){
-        cout<<res<<"\n";
-      }
-
-      else if(res==res1){
-        cout<<res+2<<"\n";
-      }
-
-      else{
-        cout<<res<<"\n";
-      }
+    ll number,member,me,to;
+    cin>>number>>member;
+    ll array[number][member];
+    for(ll i=0;i<number;i++){
+        for(ll j=0;j<member;j++)
+            array[i][j]=0;
+    }
+    array[0][0]=1;
+    array[number-1][0]=1;
+    array[0][member-1]=1;
+    array[number-1][member-1]=1;
+    if(number%2==0){
+        for(int i=3;i<number;i+=2){
+            array[i][0]=1;
+            array[i][member-1]=1;
+        }
+    }
+    else{
+        for(int i=2;i<number;i+=2){
+            array[i][0]=1;
+            array[i][member-1]=1;
+        }
+    }
+    if(member%2==0){
+        for(int i=3;i<member;i+=2){
+            array[0][i]=1;
+            array[number-1][i]=1;
+        }
+    }
+    else{
+        for(int i=2;i<member;i+=2){
+            array[0][i]=1;
+            array[number-1][i]=1;
+        }
+    }
+    for(ll i=0;i<number;i++){
+        for(ll j=0;j<member;j++)
+            cout<<array[i][j];
+        cout<<endl;
+    }
+    cout<<endl;
 }
 
 //=========== Main Function ==============//

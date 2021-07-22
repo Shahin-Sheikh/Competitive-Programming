@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void run_case(){
+void tr(){
     int n,x,t,sum=0,dis=0,sub=0,cdis=0,worst=0;
     cin>>n>>x>>t;
     if(x>1){
@@ -31,7 +31,7 @@ int main(){
     int tests;
     cin>>tests;
     while (tests--){
-        run_case();
+        tr();
     }
     return 0;
 }

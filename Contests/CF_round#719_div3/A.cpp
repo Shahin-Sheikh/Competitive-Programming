@@ -22,7 +22,7 @@ int findRepeatFirstN2(char* s)
     return p;
 }
 
-void run_case(){
+void tr(){
     int n;
     cin>>n;
     char str[n];
@@ -41,6 +41,6 @@ int main()
   int tests; 
   cin>>tests;
   while (tests--)
-    run_case();
+    tr();
   return 0;
 }

@@ -32,7 +32,7 @@ const   int            md  = 0;
 //----------------------------------------------------------------------------------//
 
 //=========== Run Case ============//
-void run_case(){
+void tr(){
     int n;
     cin>>n;
     for(int i=0;i<n;i++){
@@ -47,7 +47,7 @@ int main() {
     int tests;
     cin>>tests;
     while(tests--){
-        run_case();
+        tr();
     }
 	return 0;
 }

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void run_case(){
+void tr(){
     int x,div=0,mul=1,sub=0;
     cin>>x;
     div = x/11;
@@ -21,7 +21,7 @@ int main()
   int tests; 
   cin>>tests;
   while (tests--){
-      run_case();
+      tr();
   }
   return 0;
 }

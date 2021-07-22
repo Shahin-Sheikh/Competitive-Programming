@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void run_case(){
+void tr(){
     ios_base::sync_with_stdio(0);cin.tie(0);
     int k,res=0;
     cin>>k;
@@ -18,6 +18,6 @@ int main()
   int tests; 
   cin>>tests;
   while (tests--)
-    run_case();
+    tr();
   return 0;
 }

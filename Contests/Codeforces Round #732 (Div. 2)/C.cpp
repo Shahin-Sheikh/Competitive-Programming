@@ -70,7 +70,7 @@ int minSwaps(int ara[], int z)
     return ans;
 }
 //=========== Run Case ============//
-void run_case(){
+void tr(){
     int n,res=0;
     cin>>n;
     int ara[n];
@@ -95,7 +95,7 @@ int main() {
     int tests;
     cin>>tests;
     while(tests--){
-        run_case();
+        tr();
     }
 	return 0;
 }

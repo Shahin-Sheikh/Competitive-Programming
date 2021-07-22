@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void run_case(){
+void tr(){
     int n,res=0,pos=0,pos1=0,first=0,second=0,min=0,firstm=0,secondm=0;
     cin>>n;
     int ara[n];
@@ -47,7 +47,7 @@ int main(){
     int tests;
     cin>>tests;
     while (tests--){
-        run_case();
+        tr();
     }
     return 0;
 }

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void run_case(){
+void tr(){
   int n,mul=1,sum=0,sum1=0,fsum=0;
   cin>>n;
   mul = 2*n;
@@ -27,7 +27,7 @@ int main(){
     int tests;
     cin>>tests;
     while (tests--){
-        run_case();
+        tr();
     }
     return 0;
 }

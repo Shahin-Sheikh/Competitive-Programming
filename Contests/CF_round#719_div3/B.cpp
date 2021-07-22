@@ -11,7 +11,7 @@ int countDigit(long long n)
     }
     return count;
 }
-void run_case(){
+void tr(){
     long long n,count1=0;
     int res = 0;
     cin>>n;
@@ -34,6 +34,6 @@ int main()
   int tests; 
   cin>>tests;
   while (tests--)
-    run_case();
+    tr();
   return 0;
 }
