@@ -1,14 +1,12 @@
-#include<iostream>
+//What is the output when the following code fragment is executed?
+#include <iostream>
 
 using namespace std;
 
-int main(){
-	char ch;
-	cin>>ch;
-	if (ch == '%' || ch == '/' || ch == '*' || ch == '+' || ch == '-') {
-		cout<<"Given input is operator\n";
-	}
-	else{
-		cout<<"Given input is not operator\n";
-	}
+int main()
+{
+	int n, k = 8;
+	n = (100 % k ? k + 1 : k - 1);
+	cout << "n = " << n << "   k = " << k << endl;
+	return 0;
 }
