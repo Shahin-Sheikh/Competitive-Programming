@@ -1,4 +1,5 @@
 // Best case scenario: O(n)
+// Using ASCII value
 #include <bits/stdc++.h>
 using namespace std;
 
