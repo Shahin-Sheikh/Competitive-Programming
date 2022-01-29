@@ -11,17 +11,16 @@ bool Permutaion(string str, string str1)
     for (int i = 0; i < str.length(); i++)
     {
         count[str[i]]++;
-        cout << count[str[i]];
     }
     for (int i = 0; i < str1.length(); i++)
     {
         count[str1[i]]--;
-        cout << count[str1[i]];
         if (count[str1[i]] < 0)
         {
             return false;
         }
     }
+    
     return true;
 }
 int main()
