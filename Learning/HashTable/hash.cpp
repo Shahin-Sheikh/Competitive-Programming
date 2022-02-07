@@ -1,14 +1,23 @@
-#include <cstdlib>
-#include <iostream>
-#include <string>
-#include <vector>
-#include <unordered_map>
-#include <unordered_set>
-#include <algorithm>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
-#ifndef HASH_H
-#define HAsh_H
-
-#endif // HASH_H
+int main()
+{
+    string str;
+    cin >> str;
+    int count = 0;
+    unordered_map<char, int> list;
+    for (int i = 0; i < str.length(); i++)
+    {
+        list[str[i]]++;
+    }
+    for (int i = 0; i < str.length(); i++)
+    {
+        if (list.find(str[i]) != list.end())
+        {
+            count++;
+        }
+    }
+    cout << count << "\n";
+    return 0;
+}
