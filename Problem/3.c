@@ -1,45 +1,12 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
+#include <iostream>
+using namespace std;
+int main()
 {
-    char text[30];
-    int i = 2, a = 0;
-    clrscr();
-
-    printf("\n\nEnter Text : ");
-    gets(text);
-    if(text[0] == '/')
-    {
-        if(text[1] == '/') {
-            printf("\nIt is a Comment.");
-        } 
-        else if(text[1] == '*') 
-        {
-            for(i = 2; i <= 30; i++)
-            {
-                if(text[i] == '*' && text[i + 1] == '/')
-                {
-                    printf("\nIt is a Comment.");
-                    a = 1;
-                    break;
-                }
-                else {
-                    continue;
-                }
-            }
-            if(a == 0)
-            {
-                printf("\nIt is Not a Comment.");
-            }
-            else
-            {
-                printf("\nIt is Not a Comment.");
-            }
-        }
-    }
-    else
-    {
-        printf("\nIt is Not a Comment.");
-    }
-    getch();
+    int a = 5, b = 10;
+    cout << "Before swap a= " << a << " b= " << b << endl;
+    a = a * b; 
+    b = a / b; 
+    a = a / b; 
+    cout << "After swap a= " << a << " b= " << b << endl;
+    return 0;
 }
