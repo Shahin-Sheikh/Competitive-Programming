@@ -1,17 +1,45 @@
-
 #include <iostream>
-
+#include <string>
 using namespace std;
+
+/*
+find the total sum
+double the sum
+analyze if any 2 numbers are greater than double sum
+*/
+
+string SumMultiplier(int arr[], int size)
+{
+    int total = 0;
+
+    for (int x = 0; x < size; x++)
+    {
+        total += arr[x];
+    }
+
+    total *= 2;
+
+    for (int x = 0; x < size - 1; x++)
+    {
+        for (int y = x + 1; y < size; y++)
+        {
+            if (arr[x] * arr[y] > total)
+            {
+                return "true";
+            }
+        }
+    }
+
+    return "false";
+}
 
 int main()
 {
-    int a = 10, b = 25;
-    int c = a + 1;
-    a++ 
-    a=a+1;
-    int d = b + 1;
-    a = c + d;
-    // b = ++b + ++a;
-    cout << a << " " << b << endl;
+    int A[] = {2, 5, 6, -6, 16, 2, 3, 6, 5, 3};
+    int B[] = {2, 2, 2, 2, 4, 1};
+    int C[] = {1, 1, 2, 10, 3, 1, 12};
+    cout << SumMultiplier(A, sizeof(A) / sizeof(A[0])) << endl; // true
+    cout << SumMultiplier(B, sizeof(B) / sizeof(B[0])) << endl; // false
+    cout << SumMultiplier(C, sizeof(C) / sizeof(C[0])) << endl; // true
     return 0;
 }
