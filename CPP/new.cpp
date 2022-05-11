@@ -23,14 +23,14 @@ using namespace std;
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-   ll t;
+   l t;
    cin>>t;
-    for(ll i=0;i<t;i++){
-      ll count=0,n,p,t=0,sum=0;
+    for(l i=0;i<t;i++){
+      l count=0,n,p,t=0,sum=0;
 
           cin>>n;
 
-      vector<ll> arr(n);
+      vector<l> arr(n);
 
        for (int j = 0; j <= n-1; ++j)
         {

@@ -5,9 +5,9 @@
 using namespace std;
  
 
-ll f2(ll x,ll y ){
+l f2(l x,l y ){
     while(y){
-        ll res=y;
+        l res=y;
         y=x%y;
         x=res;
     }
@@ -15,9 +15,9 @@ ll f2(ll x,ll y ){
 }
 
  
- ll f1(ll a,ll b,ll c){
+ l f1(l a,l b,l c){
 
-    ll m=0,n,r;
+    l m=0,n,r;
     if(a==0){
         return 0;
     }
@@ -44,11 +44,11 @@ int main(){
    
    ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-    ll tests;
+    l tests;
     
 	cin>>tests;
-    for (ll i = 0; i < tests; ++i){
-        ll n,final=0,rt=0;
+    for (l i = 0; i < tests; ++i){
+        l n,final=0,rt=0;
 
         cin>>n;
     final=f1(n,2,1);

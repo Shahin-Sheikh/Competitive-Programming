@@ -7,13 +7,13 @@ using namespace std;
 
 int main(){
 
-    ll t;
+    l t;
     cin>>t;
-    ll multi = 1;
+    l multi = 1;
     for (int i = 0; i < t; ++i)
     {
-        vector<ll> v;
-        ll n;
+        vector<l> v;
+        l n;
         cin>>n;
 
         for (int j = 0; j <= n-1; ++j)

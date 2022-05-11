@@ -3,16 +3,16 @@
 using namespace std;
 
 
-void myf1(ll *m, ll *n)
+void myf1(l *m, l *n)
 {
-    ll kj = *m;
+    l kj = *m;
     *m = *n;
     *n = kj;
 }
  
-void z(ll nam[], ll s)
+void z(l nam[], l s)
 {
-    ll l = 0, r = s-1;
+    l l = 0, r = s-1;
     while (l < r)
     {
          while (nam[l]%2 == 0 && l < r)
@@ -29,7 +29,7 @@ void z(ll nam[], ll s)
         }
     }
 }
-ll myf(ll o, ll p)
+l myf(l o, l p)
 {
     if (p == 0)
         return o;
@@ -40,15 +40,15 @@ ll myf(ll o, ll p)
 int main(){
 	ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-    ll tests;
+    l tests;
 	cin>>tests;
-	for (ll i = 0; i < tests; ++i)
+	for (l i = 0; i < tests; ++i)
 	{	
 
-		ll s,sum=0;
+		l s,sum=0;
 		cin>>s;
 
-		ll ara[s];
+		l ara[s];
 
 		for (int i = 0; i < s; ++i) {
         cin>>ara[i];

@@ -10,8 +10,8 @@ double getCurrentTime() {
     return (double)(clock() - startTime) / CLOCKS_PER_SEC;
 }
 
-ll palindromeChecker(ll input){
-    ll k, val, d, temp = 0;
+l palindromeChecker(l input){
+    l k, val, d, temp = 0;
 
      k=input;
 
@@ -36,8 +36,8 @@ ll palindromeChecker(ll input){
     
 }
 
-ll power(ll base,ll pow){
-    ll res=1;
+l power(l base,l pow){
+    l res=1;
     for (int i = 1; i <=pow; ++i)
     {
         res=res*base;
@@ -46,12 +46,12 @@ ll power(ll base,ll pow){
     return res;
 }
 
-ll cal(ll a){
-    ll final=0,val;
+l cal(l a){
+    l final=0,val;
 
     for (int i = 0; i < INT_MAX; ++i)
     {
-        ll temp=i,res=0;
+        l temp=i,res=0;
         if(final==a){
             break;
         }
@@ -72,11 +72,11 @@ ll cal(ll a){
     return val;
 
 }
-bool check(ll array[], ll n)
+bool check(l array[], l n)
 {   
     bool flag = 0;
 
-    for(ll i = 0; i < n - 1; i++)      
+    for(l i = 0; i < n - 1; i++)      
     {         
         if(array[i] != array[i + 1])
             flag = 1;
@@ -85,7 +85,7 @@ bool check(ll array[], ll n)
     return flag;
 }
 
-ll gcd(ll a, ll b)
+l gcd(l a, l b)
 {
     if (a == 0)
         return b;
@@ -95,20 +95,20 @@ ll gcd(ll a, ll b)
 int main(){
 	ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-	ll t;
+	l t;
     cin>>t;
 
    
    for (int iii = 0; iii < t; ++iii)
    {    
 
-        ll s,count=0;
+        l s,count=0;
         cin>>s;
 
-        ll inp[s];
-        ll result[s];
+        l inp[s];
+        l result[s];
 
-        for (ll i = 0; i < s; ++i)
+        for (l i = 0; i < s; ++i)
         {
             cin >> inp[i];
         }
@@ -118,7 +118,7 @@ int main(){
            cout<<0<<endl; 
         }
         else{
-            for (ll i = 0; i < s-1; ++i)
+            for (l i = 0; i < s-1; ++i)
             {
                 result[i]=gcd(inp[i],inp[i+1]);
             }
@@ -127,7 +127,7 @@ int main(){
 
             count++;
             while(check(result,s)!=0){
-               for (ll i = 0; i < s-1; ++i)
+               for (l i = 0; i < s-1; ++i)
             {
                 result[i]=gcd(result[i],result[i+1]);
             }

@@ -1,12 +1,11 @@
-#include <iostream>
-using namespace std;
-int main()
+#include <stdio.h>
+int main(void)
 {
-    int a = 5, b = 10;
-    cout << "Before swap a= " << a << " b= " << b << endl;
-    a = a * b; 
-    b = a / b; 
-    a = a / b; 
-    cout << "After swap a= " << a << " b= " << b << endl;
+    char *ptr;
+    char string[] = "Hello World!";
+    ptr = string;
+    ptr += 6;
+    printf("%s\n", ptr);
+
     return 0;
 }

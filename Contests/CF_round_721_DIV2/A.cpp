@@ -5,12 +5,12 @@ using namespace std;
 
 int main(){
 	ios_base::sync_with_stdio(false); cin.tie(NULL);
-    ll t;
+    l t;
     cin>>t;
-    for(ll i=0;i<t;i++){
-    	ll n,s;
+    for(l i=0;i<t;i++){
+    	l n,s;
 		cin>>n>>s;
-		ll count=n;
+		l count=n;
 		while(count !=0){
 			 count = count & (n-1);
 			s=n-1;

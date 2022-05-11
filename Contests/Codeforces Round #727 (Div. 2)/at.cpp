@@ -16,12 +16,12 @@ using namespace std;
  
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(NULL);
-    ll t;
+    l t;
     cin>>t;
-    for (ll iii = 0; iii < t; ++iii)
+    for (l iii = 0; iii < t; ++iii)
     {
 
-        ll a,b,c,x,y,temp,result;
+        l a,b,c,x,y,temp,result;
         // vector<ll> v;
         //  int input;
         // while (cin >> input){

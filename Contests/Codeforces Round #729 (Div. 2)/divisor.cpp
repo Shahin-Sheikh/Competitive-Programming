@@ -14,7 +14,7 @@
 using namespace std;
 
 template<typename T>void read(T&x){
-    static char c;static ll f;
+    static char c;static l f;
     for(c=ch(),f=1;c<'0'||c>'9';c=ch())if(c=='-')f=-f;
     for(x=0;c>='0'&&c<='9';c=ch())x=x*10+(c&15);x*=f;
 }
@@ -23,7 +23,7 @@ const int maxn = 1e5 + 7;
 
 const int INF = 1000000009;
 int ABS(int a){return max(a, -a);}
-ll ABS(ll a){return max(a, -a);}
+l ABS(l a){return max(a, -a);}
 double ABS(double a){return max(a, -a);}
 
 
@@ -52,9 +52,9 @@ int smallestDivisor(int n)
     return n;
 }
 
-ll gcd(ll x,ll y ){
+l gcd(l x,l y ){
     while(y){
-        ll res=y;
+        l res=y;
         y=x%y;
         x=res;
     }
@@ -62,9 +62,9 @@ ll gcd(ll x,ll y ){
 }
 
  
- ll res(ll a,ll b,ll c){
+ l res(l a,l b,l c){
 
-    ll temp=0,q,r,ver=0;
+    l temp=0,q,r,ver=0;
     if(a==0){
         ver++;
         return 0;
@@ -92,12 +92,12 @@ int main(){
    
    ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-   vector<ll>store;
-        ll t;
+   vector<l>store;
+        l t;
     
 	cin>>t;
-    for (ll iii = 0; iii < t; ++iii){
-        ll n,count=0;
+    for (l iii = 0; iii < t; ++iii){
+        l n,count=0;
 
         cin>>n;
 

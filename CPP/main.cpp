@@ -67,9 +67,9 @@ void findPermutations(int a[], int n,int l,int r,int s)
 int main(){
     ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-   ll t;
+   l t;
    cin>>t;
-    for(ll i=0;i<t;i++){
+    for(l i=0;i<t;i++){
       int n,l,r,s;
 
       cin>>n>>l>>r>>s;

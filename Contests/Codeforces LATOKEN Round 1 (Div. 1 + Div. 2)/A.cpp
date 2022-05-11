@@ -14,17 +14,17 @@ using namespace std;
 
 void solve(){
 	
-	ll n,k,p,num,t,total=0;
+	l n,k,p,num,t,total=0;
 
     vector<vector<char> > vec; 
 
     cin>>n>>k;
     
-    for (ll i = 0; i < n; i++) { 
+    for (l i = 0; i < n; i++) { 
         
         vector<char> v1; 
   
-        for (ll j = 0; j < k; j++) { 
+        for (l j = 0; j < k; j++) { 
            cin>>num;				/// n=row ; k=col
             v1.push_back(num); 
             
@@ -64,9 +64,9 @@ int main(){
    
    ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-   ll t;
+   l t;
 	cin>>t;
-	for (ll iii = 0; iii < t; ++iii)
+	for (l iii = 0; iii < t; ++iii)
 	{	
     	
     	solve();
