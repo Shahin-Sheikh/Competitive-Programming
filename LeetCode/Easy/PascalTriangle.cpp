@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+/* #include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -18,5 +18,21 @@ int main()
             }
         }
         return r;
+    }
+} */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int numRows; // input = 5
+    cin >> numRows;
+    for (int i = 1; i <= numRows; i++)
+    {
+        for (int j = i; j > 0; j--)
+        {
+            cout << j << " ";
+        }
     }
 }
