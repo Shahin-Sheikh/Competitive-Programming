@@ -3,13 +3,12 @@ using namespace std;
 
 int main()
 {
-    int sum = 0, i, j;
-    for (i = 0, j = 2; i + j < 20; i++, j = j + 3)
-    {
-        sum += i + j;
-        cout << i<<" "<< j <<" " <<sum<< endl;
-        //cout << sum ;
+    int ara[10] = {0,1,2,3,4,5,6,7,8,9};
+    for(int i=0;i<10;i++){
+        ara[i] = ara[i] + 10;
     }
-    cout << i<<" "<< j <<" "<< sum << endl;
+    for(int i=0;i<10;i++){
+        cout<<ara[i]<<"\n";
+    }
     return 0;
 }
